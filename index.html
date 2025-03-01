@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorizonAI </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="hello.webp">
+
+</head>
+<body>
+
+    <div id="container">
+        <!-- Sidebar for past chats -->
+        <div id="sidebar">
+            <button id="new-chat" onclick="startNewChat()">➕ New Chat</button>
+            <h2>Past Chats</h2>
+            <ul id="chat-history-list"></ul>
+            <button id="clear-history" onclick="clearChatHistory()">🗑️ Clear History</button>
+        </div>
+
+        <!-- Chatbox -->
+        <div id="chat-area">
+            <h2> HorizonAI </h2><br>
+            <div id="chat-box"></div>
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="Type a message..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
